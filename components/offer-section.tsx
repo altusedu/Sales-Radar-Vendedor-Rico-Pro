@@ -1,5 +1,7 @@
+import Image from 'next/image'
 import { Check } from 'lucide-react'
 import { CtaButton } from './cta-button'
+import { basePath } from '@/lib/base-path'
 
 const stackItems = [
   {
@@ -19,6 +21,14 @@ export function OfferSection() {
     <section id="oferta" className="bg-offwhite scroll-mt-4">
       <div className="mx-auto max-w-3xl px-4 py-16 sm:py-20">
         <div className="overflow-hidden rounded-3xl border-2 border-brand-orange bg-graphite text-offwhite shadow-2xl shadow-brand-orange/20">
+          <Image
+            src={`${basePath}/commandments-library.png`}
+            alt="Todos os módulos do Radar do Vendedor Rico PRO"
+            width={1200}
+            height={500}
+            className="w-full object-cover"
+          />
+
           <div className="border-b border-white/10 bg-white/[0.03] px-6 py-8 text-center sm:px-10">
             <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-orange sm:text-xs">
               Oferta Completa
