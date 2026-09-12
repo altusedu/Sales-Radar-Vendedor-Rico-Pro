@@ -44,7 +44,7 @@ export function MechanismSection() {
           </p>
           <p className="mt-3 text-pretty text-xl font-extrabold uppercase leading-tight tracking-tight text-brand-orange sm:text-2xl">
             Só abre o app e{' '}
-            <span className="whitespace-nowrap">SÓ FAZ!.</span>
+            <span className="whitespace-nowrap">FAZ O QUE TEM QUE SER FEITO!.</span>
           </p>
         </div>
 
