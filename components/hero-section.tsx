@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { CloudUpload, Lock, ShieldCheck } from 'lucide-react'
 import { CtaButton } from './cta-button'
+import { basePath } from '@/lib/base-path'
 
 export function HeroSection() {
   return (
@@ -12,7 +13,7 @@ export function HeroSection() {
       <div className="relative mx-auto max-w-5xl px-4 pb-16 pt-12 text-center sm:pt-16">
         <div className="mb-6 flex flex-col items-center gap-4">
           <Image
-            src="/logo-altus.jpg"
+            src={`${basePath}/logo-altus.jpg`}
             alt="Grupo Altus Educacional"
             width={72}
             height={72}
@@ -41,7 +42,7 @@ export function HeroSection() {
             className="pointer-events-none absolute inset-0 scale-90 rounded-full bg-brand-orange/30 blur-[80px]"
           />
           <Image
-            src="/dashboard-mockup.png"
+            src={`${basePath}/dashboard-mockup.png`}
             alt="Aplicativo Radar do Vendedor Rico PRO exibido em celular e notebook"
             width={1200}
             height={800}
