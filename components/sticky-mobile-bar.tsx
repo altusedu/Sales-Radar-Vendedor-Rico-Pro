@@ -1,37 +1,29 @@
-'use client'
+import Image from 'next/image'
+import { basePath } from '@/lib/base-path'
 
-import { useEffect, useState } from 'react'
-
-export function StickyMobileBar() {
-  const [visible, setVisible] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 700)
-    onScroll()
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
-
-  if (!visible) return null
-
+export function SiteFooter() {
   return (
-    <div className="animate-slide-up fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-graphite-dark/95 backdrop-blur md:hidden">
-      <div className="flex items-center justify-between gap-3 px-4 py-3">
-        <div className="leading-tight">
-          <p className="text-[10px] uppercase tracking-wider text-offwhite/60">
-            Radar PRO
-          </p>
-          <p className="text-base font-extrabold text-offwhite">
-            R$ 187<span className="text-sm font-medium text-offwhite/70">/ano</span>
-          </p>
-        </div>
-        <a
-          href="#oferta"
-          className="rounded-lg bg-brand-orange px-5 py-3 text-sm font-extrabold uppercase tracking-wide text-white transition-colors hover:bg-brand-orange-hover"
-        >
-          Assinar Agora
-        </a>
+    <footer className="bg-graphite-dark text-offwhite/70">
+      <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-10 text-center">
+        <Image
+          src={`${basePath}/logo-altus.jpg`}
+          alt="Grupo Altus Educacional"
+          width={56}
+          height={56}
+          className="size-14 rounded-lg object-cover ring-1 ring-white/10"
+        />
+        <p className="text-sm font-semibold text-offwhite">
+          Grupo Altus Educacional
+        </p>
+        <p className="max-w-md text-pretty text-xs leading-relaxed">
+          Radar do Vendedor Rico PRO — o sistema de gestão que coloca
+          previsibilidade financeira no bolso de quem vive de vendas.
+        </p>
+        <p className="mt-2 text-xs text-offwhite/40">
+          © {new Date().getFullYear()} Grupo Altus Educacional. Todos os direitos
+          reservados.
+        </p>
       </div>
-    </div>
+    </footer>
   )
 }
