@@ -1,11 +1,12 @@
 import Image from 'next/image'
+import { basePath } from '@/lib/base-path'
 
 export function SiteFooter() {
   return (
     <footer className="bg-graphite-dark text-offwhite/70">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-10 text-center">
         <Image
-          src="/logo-altus.jpg"
+          src={`${basePath}/logo-altus.jpg`}
           alt="Grupo Altus Educacional"
           width={56}
           height={56}
