@@ -16,4 +16,12 @@ export default function Page() {
       <HeroSection />
       <PainSection />
       <MechanismSection />
-      <CommandmentsSection
+      <CommandmentsSection />
+      <OfferSection />
+      <GuaranteeSection />
+      <FaqSection />
+      <SiteFooter />
+      <StickyMobileBar />
+    </main>
+  )
+}
