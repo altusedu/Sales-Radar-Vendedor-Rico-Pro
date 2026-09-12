@@ -1,6 +1,7 @@
 import { AnnouncementBar } from '@/components/announcement-bar'
 import { HeroSection } from '@/components/hero-section'
 import { PainSection } from '@/components/pain-section'
+import { MechanismSection } from '@/components/mechanism-section'
 import { CommandmentsSection } from '@/components/commandments-section'
 import { OfferSection } from '@/components/offer-section'
 import { GuaranteeSection } from '@/components/guarantee-section'
@@ -14,12 +15,5 @@ export default function Page() {
       <AnnouncementBar />
       <HeroSection />
       <PainSection />
-      <CommandmentsSection />
-      <OfferSection />
-      <GuaranteeSection />
-      <FaqSection />
-      <SiteFooter />
-      <StickyMobileBar />
-    </main>
-  )
-}
+      <MechanismSection />
+      <CommandmentsSection
