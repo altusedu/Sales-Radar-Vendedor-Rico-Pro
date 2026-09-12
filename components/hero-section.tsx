@@ -25,8 +25,8 @@ export function HeroSection() {
         </div>
 
         <h1 className="mx-auto max-w-3xl text-pretty text-3xl font-extrabold leading-[1.1] tracking-tight sm:text-4xl md:text-5xl">
-          Meta não se bate no dia 30:{' '}
-          <span className="text-brand-orange">se bate TODO DIA.</span> Saia do
+          Meta não se bate dia 30:{' '}
+          <span className="text-brand-orange">Se bate TODO DIA.</span> Saia do
           ciclo de incerteza e assuma o controle da sua comissão.
         </h1>
 
