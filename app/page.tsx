@@ -3,6 +3,8 @@ import { HeroSection } from '@/components/hero-section'
 import { PainSection } from '@/components/pain-section'
 import { MechanismSection } from '@/components/mechanism-section'
 import { CommandmentsSection } from '@/components/commandments-section'
+import { AuthoritySection } from '@/components/authority-section'
+import { AudienceFitSection } from '@/components/audience-fit-section'
 import { OfferSection } from '@/components/offer-section'
 import { GuaranteeSection } from '@/components/guarantee-section'
 import { FaqSection } from '@/components/faq-section'
@@ -17,6 +19,8 @@ export default function Page() {
       <PainSection />
       <MechanismSection />
       <CommandmentsSection />
+      <AuthoritySection />
+      <AudienceFitSection />
       <OfferSection />
       <GuaranteeSection />
       <FaqSection />
