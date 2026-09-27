@@ -21,7 +21,7 @@ export function CtaButton({ children, className, checkoutUrl }: CtaButtonProps) 
       href={checkoutUrl ?? '#oferta'}
       onClick={() => {
         if (checkoutUrl) {
-          window.fbq?.('track', 'InitiateCheckout', {
+          window.fbq?.('trackCustom', 'CliqueCheckout', {
             content_name: 'Radar do Vendedor Rico PRO',
             value: 187,
             currency: 'BRL',
