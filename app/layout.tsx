@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import { RastreioRolagem } from '@/components/rastreio-rolagem'
+import { RepasseAtribuicao } from '@/components/repasse-atribuicao'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -73,6 +74,7 @@ export default function RootLayout({
               />
             </noscript>
             <RastreioRolagem />
+            <RepasseAtribuicao />
           </>
         )}
       </body>

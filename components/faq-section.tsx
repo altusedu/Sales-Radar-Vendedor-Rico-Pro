@@ -52,7 +52,10 @@ export function FaqSection() {
               >
                 <button
                   type="button"
-                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  onClick={() => {
+                    if (!isOpen) window.fbq?.('trackCustom', 'FAQAberta', { pergunta: faq.question })
+                    setOpenIndex(isOpen ? null : index)
+                  }}
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
                 >
