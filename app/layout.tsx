@@ -60,6 +60,9 @@ export default function RootLayout({
                 s.parentNode.insertBefore(t,s)}(window, document,'script',
                 'https://connect.facebook.net/en_US/fbevents.js');
                 fbq.disablePushState = true;
+                // Sem eventos automáticos (SubscribedButtonClick/MicroData): cada clique já tem evento
+                // próprio (FAQAberta, CliqueCheckout, Lead) e o automático duplicava a contagem.
+                fbq('set', 'autoConfig', false, '1660381632085369');
                 fbq('init', '1660381632085369');
                 fbq('track', 'PageView');
               `}
