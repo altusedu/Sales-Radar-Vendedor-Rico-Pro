@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
+import { RastreioRolagem } from '@/components/rastreio-rolagem'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -71,6 +72,7 @@ export default function RootLayout({
                 alt=""
               />
             </noscript>
+            <RastreioRolagem />
           </>
         )}
       </body>
