@@ -9,7 +9,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Radar do Vendedor Rico PRO | Grupo Altus Educacional',
+  title: 'Radar do Vendedor Rico PRO | Calculadora de Comissão e Metas',
   description:
     'O sistema definitivo de gestão para vendedores: calcule metas diárias, proteja sua comissão contra descontos e coloque previsibilidade financeira no seu bolso todo mês.',
   generator: 'v0.app',
