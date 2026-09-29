@@ -36,46 +36,19 @@ export function HeroSection() {
           coloca previsibilidade de 5 dígitos no seu bolso todos os meses.
         </p>
 
-        <div className="relative mx-auto mt-10 max-w-3xl px-6 pb-8 sm:px-10">
+        <div className="relative mx-auto mt-10 max-w-3xl">
           <div
             aria-hidden="true"
             className="pointer-events-none absolute inset-0 scale-90 rounded-full bg-brand-orange/30 blur-[80px]"
           />
-
-          {/* Notebook: aqui entrava a mockup de tela gerada por IA (texto ilegível,
-              não representava o produto de verdade). Trocado pela logo do Radar em
-              vez de fingir uma interface — mais honesto que uma tela fake. */}
-          <div className="relative mx-auto w-full max-w-[600px]">
-            <div className="overflow-hidden rounded-t-lg border border-white/10 bg-graphite p-1.5 shadow-2xl">
-              <div className="overflow-hidden rounded-md">
-                <Image
-                  src={`${basePath}/hero/radar-logo-minimalista.webp`}
-                  alt="Radar do Vendedor Rico"
-                  width={1600}
-                  height={892}
-                  priority
-                  className="w-full"
-                />
-              </div>
-            </div>
-            <div className="mx-auto h-3 w-[94%] rounded-b-xl bg-gradient-to-b from-white/15 to-white/[0.03]" />
-            <div className="mx-auto h-1.5 w-[36%] rounded-b-full bg-white/10" />
-
-            {/* Celular sobreposto no canto — mesmo emblema de moeda já usado na
-                oferta, agora também no hero. */}
-            <div className="absolute -bottom-6 -right-3 w-[27%] min-w-[92px] max-w-[150px] sm:right-3">
-              <div className="overflow-hidden rounded-[20%] border-[3px] border-graphite-dark bg-graphite-dark shadow-2xl ring-1 ring-white/10">
-                <Image
-                  src={`${basePath}/hero/radar-pro-moeda.webp`}
-                  alt="Radar do Vendedor Rico PRO"
-                  width={1254}
-                  height={1254}
-                  priority
-                  className="w-full"
-                />
-              </div>
-            </div>
-          </div>
+          <Image
+            src={`${basePath}/hero/hero-mockup.webp`}
+            alt="Radar do Vendedor Rico PRO exibido em notebook e celular"
+            width={1536}
+            height={1024}
+            priority
+            className="relative mx-auto w-full"
+          />
         </div>
 
         <div className="mx-auto mt-10 max-w-xl">
