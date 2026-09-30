@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     description: descricao,
     url: urlCanonica,
     type: 'website',
-    images: ['https://www.altusedu.com.br/radar-vendedor-rico-pro/hero/hero-mockup.webp'],
+    images: ['https://www.altusedu.com.br/radar-vendedor-rico-pro/og-radar-vendedor-rico-pro.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: titulo,
     description: descricao,
-    images: ['https://www.altusedu.com.br/radar-vendedor-rico-pro/hero/hero-mockup.webp'],
+    images: ['https://www.altusedu.com.br/radar-vendedor-rico-pro/og-radar-vendedor-rico-pro.webp'],
   },
   icons: {
     icon: [
