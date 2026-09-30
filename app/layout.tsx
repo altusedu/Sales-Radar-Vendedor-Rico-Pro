@@ -8,11 +8,28 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
+const titulo = 'Radar do Vendedor Rico PRO | Calculadora de Comissão e Metas'
+const descricao =
+  'O sistema definitivo de gestão para vendedores: calcule metas diárias, proteja sua comissão contra descontos e coloque previsibilidade financeira no seu bolso todo mês.'
+const urlCanonica = 'https://www.altusedu.com.br/radar-vendedor-rico-pro'
+
 export const metadata: Metadata = {
-  title: 'Radar do Vendedor Rico PRO | Calculadora de Comissão e Metas',
-  description:
-    'O sistema definitivo de gestão para vendedores: calcule metas diárias, proteja sua comissão contra descontos e coloque previsibilidade financeira no seu bolso todo mês.',
+  title: titulo,
+  description: descricao,
   generator: 'v0.app',
+  openGraph: {
+    title: titulo,
+    description: descricao,
+    url: urlCanonica,
+    type: 'website',
+    images: ['https://www.altusedu.com.br/radar-vendedor-rico-pro/hero/hero-mockup.webp'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: titulo,
+    description: descricao,
+    images: ['https://www.altusedu.com.br/radar-vendedor-rico-pro/hero/hero-mockup.webp'],
+  },
   icons: {
     icon: [
       {
