@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: titulo,
   description: descricao,
   generator: 'v0.app',
+  alternates: {
+    canonical: urlCanonica,
+  },
   openGraph: {
     title: titulo,
     description: descricao,
