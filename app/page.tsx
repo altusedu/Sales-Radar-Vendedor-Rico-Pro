@@ -13,7 +13,7 @@ import { SiteFooter } from '@/components/site-footer'
 
 export default function Page() {
   return (
-    <main className="bg-offwhite">
+    <main id="inicio" className="bg-offwhite">
       <AnnouncementBar />
       <HeroSection />
       <PainSection />
