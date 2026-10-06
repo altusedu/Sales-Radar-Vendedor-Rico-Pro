@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/radar-vendedor-rico-pro',
-  assetPrefix: '/radar-vendedor-rico-pro',
+  basePath: '/radar-vendedor-rico',
+  assetPrefix: '/radar-vendedor-rico',
   typescript: {
     ignoreBuildErrors: true,
   },
