@@ -80,7 +80,7 @@ export function OfferSection() {
             </div>
 
             <div className="mt-8">
-              <CtaButton checkoutUrl="https://sun.eduzz.com/8WPND45N0P">
+              <CtaButton checkoutUrl="https://sun.eduzz.com/Z0B1R3579A">
                 Quero o Radar PRO com desconto agora
               </CtaButton>
             </div>
