@@ -107,6 +107,20 @@ export default function RootLayout({
                 })(window, document, "clarity", "script", "yqgztiduzp");
               `}
             </Script>
+            {/* Google Analytics 4 (propriedade Altus Educacional) */}
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                (function () {
+                  var s = document.createElement('script'); s.async = true
+                  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-JFB5XRL8BE'
+                  document.head.appendChild(s)
+                  window.dataLayer = window.dataLayer || []
+                  window.gtag = function () { window.dataLayer.push(arguments) }
+                  window.gtag('js', new Date())
+                  window.gtag('config', 'G-JFB5XRL8BE')
+                })()
+              `}
+            </Script>
           </>
         )}
       </body>
