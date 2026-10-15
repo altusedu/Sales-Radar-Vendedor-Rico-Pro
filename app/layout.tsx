@@ -112,12 +112,12 @@ export default function RootLayout({
               {`
                 (function () {
                   var s = document.createElement('script'); s.async = true
-                  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-JFB5XRL8BE'
+                  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-H1NY9NP8QZ'
                   document.head.appendChild(s)
                   window.dataLayer = window.dataLayer || []
                   window.gtag = function () { window.dataLayer.push(arguments) }
                   window.gtag('js', new Date())
-                  window.gtag('config', 'G-JFB5XRL8BE')
+                  window.gtag('config', 'G-H1NY9NP8QZ')
                 })()
               `}
             </Script>
