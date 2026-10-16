@@ -12,6 +12,8 @@ const titulo = 'Radar do Vendedor Rico PRO | Calculadora de Comissão e Metas'
 const descricao =
   'O sistema definitivo de gestão para vendedores: calcule metas diárias, proteja sua comissão contra descontos e coloque previsibilidade financeira no seu bolso todo mês.'
 const urlCanonica = 'https://www.altusedu.com.br/radar-vendedor-rico'
+const imagemCompartilhamento =
+  'https://www.altusedu.com.br/radar-vendedor-rico/og-radar-vendedor-rico-pro-whatsapp.png'
 
 export const metadata: Metadata = {
   title: titulo,
@@ -19,19 +21,6 @@ export const metadata: Metadata = {
   generator: 'v0.app',
   alternates: {
     canonical: urlCanonica,
-  },
-  openGraph: {
-    title: titulo,
-    description: descricao,
-    url: urlCanonica,
-    type: 'website',
-    images: ['https://www.altusedu.com.br/radar-vendedor-rico/og-radar-vendedor-rico-pro.png'],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: titulo,
-    description: descricao,
-    images: ['https://www.altusedu.com.br/radar-vendedor-rico/og-radar-vendedor-rico-pro.png'],
   },
   icons: {
     icon: [
@@ -64,6 +53,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${inter.variable} bg-background`}>
+      {/* Tags de compartilhamento escritas à mão, iguais às da VMN: só título, descrição, tipo e
+          imagem larga (853x329). O openGraph do metadata gera também twitter:*, e com og:url e
+          twitter:card o WhatsApp mostrava a prévia pequena, ao lado do texto. */}
+      <head>
+        <meta property="og:title" content={titulo} />
+        <meta property="og:description" content={descricao} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={imagemCompartilhamento} />
+      </head>
       <body className="antialiased font-sans">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
