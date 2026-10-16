@@ -10,10 +10,15 @@ import { GuaranteeSection } from '@/components/guarantee-section'
 import { FaqSection } from '@/components/faq-section'
 import { StickyMobileBar } from '@/components/sticky-mobile-bar'
 import { SiteFooter } from '@/components/site-footer'
+import { dadosEstruturados } from '@/lib/dados-estruturados'
+
+// `<` escapado para o texto do JSON nunca fechar a tag <script> por acidente.
+const jsonLd = JSON.stringify(dadosEstruturados()).replaceAll('<', '\\u003c')
 
 export default function Page() {
   return (
     <main id="inicio" className="bg-offwhite">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
       <AnnouncementBar />
       <HeroSection />
       <PainSection />
