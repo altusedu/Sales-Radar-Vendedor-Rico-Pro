@@ -24,6 +24,7 @@ export function dadosEstruturados() {
         '@id': `${produto}#software`,
         name: 'Radar do Vendedor Rico PRO',
         alternateName: 'RVR PRO',
+        sameAs: ['https://www.instagram.com/vendedor.rico/'],
         description:
           'Sistema de gestão de metas e vendas para vendedores comissionados. Calcula a meta diária pelos dias úteis que restam, registra as vendas do dia, acompanha comissões pendentes, simula descontos antes de negociar e guarda o histórico de cada mês com backup na nuvem.',
         applicationCategory: 'BusinessApplication',
