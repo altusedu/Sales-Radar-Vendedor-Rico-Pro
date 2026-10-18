@@ -9,7 +9,6 @@ import { OfferSection } from '@/components/offer-section'
 import { GuaranteeSection } from '@/components/guarantee-section'
 import { FaqSection } from '@/components/faq-section'
 import { ProCtaSection } from '@/components/pro-cta-section'
-import { StickyMobileBar } from '@/components/sticky-mobile-bar'
 import { SiteFooter } from '@/components/site-footer'
 import { dadosEstruturados } from '@/lib/dados-estruturados'
 
@@ -32,7 +31,6 @@ export default function Page() {
       <FaqSection />
       <ProCtaSection />
       <SiteFooter />
-      <StickyMobileBar />
     </main>
   )
 }

@@ -50,7 +50,7 @@ export function SiteFooter() {
           </a>
         </div>
       </div>
-      <div className="mx-auto max-w-5xl px-4 pb-28 sm:pb-10">
+      <div className="mx-auto max-w-5xl px-4 pb-10">
         <p className="mt-6 border-t border-white/10 pt-4 text-center text-xs text-offwhite/45">
           © 2026 Grupo Altus Educacional. Todos os direitos reservados.
         </p>

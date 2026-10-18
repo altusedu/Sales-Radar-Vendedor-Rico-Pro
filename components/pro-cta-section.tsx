@@ -8,7 +8,7 @@ const paginaPro = 'https://www.altusedu.com.br/radar-vendedor-rico-pro'
 export function ProCtaSection() {
   return (
     <section className="bg-offwhite">
-      <div className="mx-auto max-w-3xl px-4 pb-24 sm:pb-28">
+      <div className="mx-auto max-w-3xl px-4 pb-16 sm:pb-20">
         <div className="rounded-2xl border-2 border-brand-orange bg-gradient-to-br from-brand-orange/15 to-blue-500/15 p-7 text-center sm:p-8">
           <Image
             src={`${basePath}/logo-radar-vendedor-rico-pro-claro.webp`}
