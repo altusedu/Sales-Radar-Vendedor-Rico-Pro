@@ -34,6 +34,53 @@
   }
 }
 
+/* isolation cria o contexto de empilhamento do botão: sem ele, os pseudo-elementos com z-index -1
+   vão para trás do fundo do cartão da oferta. ::before é o halo neon, ::after é o preenchimento. */
+.cta-degrade {
+  position: relative;
+  isolation: isolate;
+}
+
+.cta-degrade::before,
+.cta-degrade::after {
+  content: '';
+  position: absolute;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.cta-degrade::before {
+  inset: -3px;
+  background: linear-gradient(90deg, #ff5500, #ffb800, #ff2d55, #ff5500, #ffb800);
+  background-size: 300% 100%;
+  filter: blur(12px);
+  animation: cta-neon 2.4s ease-in-out infinite;
+}
+
+.cta-degrade::after {
+  inset: 0;
+  background: linear-gradient(110deg, #ff5500, #ff7a26);
+}
+
+@keyframes cta-neon {
+  0%,
+  100% {
+    background-position: 0% 50%;
+    opacity: 0.45;
+  }
+  50% {
+    background-position: 100% 50%;
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta-degrade::before {
+    animation: none;
+    opacity: 0.8;
+  }
+}
+
 @theme inline {
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);

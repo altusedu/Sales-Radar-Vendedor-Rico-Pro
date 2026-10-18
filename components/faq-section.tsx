@@ -10,7 +10,7 @@ export function FaqSection() {
 
   return (
     <section className="bg-offwhite">
-      <div className="mx-auto max-w-3xl px-4 pb-24 sm:pb-28">
+      <div className="mx-auto max-w-3xl px-4 pb-12 sm:pb-14">
         <h2 className="text-center text-2xl font-extrabold tracking-tight text-graphite sm:text-3xl">
           Perguntas Frequentes
         </h2>

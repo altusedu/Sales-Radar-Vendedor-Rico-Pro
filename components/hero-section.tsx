@@ -41,7 +41,7 @@ export function HeroSection() {
 
         <div className="mx-auto mt-10 max-w-xl">
           <CtaButton>
-            Quero calcular minha meta diária (R$ 47)
+            Quero calcular minha comissão
           </CtaButton>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-offwhite/70 sm:text-sm">
             <span className="inline-flex items-center gap-1.5">

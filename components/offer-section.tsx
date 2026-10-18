@@ -5,12 +5,14 @@ import { basePath } from '@/lib/base-path'
 import { checkoutRadar } from '@/lib/dados-estruturados'
 
 const itens = [
-  'Calculadora de meta de comissão e faturamento do mês',
-  'Vendas e atendimentos que você precisa fazer por dia',
-  'Cálculo pelos dias que você vai trabalhar no mês',
-  'Dicas de uso e fórmulas de cada indicador',
-  'Acesso pelo celular, tablet ou computador',
+  { label: 'Calculadora de meta de comissão', valor: 197 },
+  { label: 'Vendas e atendimentos que você precisa fazer por dia', valor: 87 },
+  { label: 'Dicas de uso e fórmulas de cada indicador', valor: 147 },
+  { label: 'Cálculo pelos dias que você vai trabalhar no mês', valor: 47 },
+  { label: 'Acesso pelo celular, tablet ou computador', valor: null },
 ]
+
+const valorTotal = itens.reduce((soma, { valor }) => soma + (valor ?? 0), 0)
 
 export function OfferSection() {
   return (
@@ -39,33 +41,62 @@ export function OfferSection() {
 
           <div className="px-6 py-8 sm:px-10">
             <ul className="space-y-4">
-              {itens.map((item) => (
-                <li key={item} className="flex items-start gap-3">
+              {itens.map(({ label, valor }) => (
+                <li key={label} className="flex items-start gap-3">
                   <span className="mt-0.5 flex size-6 shrink-0 items-center justify-center rounded-full bg-brand-orange text-white">
                     <Check className="size-4" strokeWidth={3} />
                   </span>
                   <span className="flex-1 text-pretty text-sm leading-relaxed sm:text-base">
-                    {item}
+                    {label}
                   </span>
+                  {valor === null ? (
+                    <span className="mt-0.5 shrink-0 whitespace-nowrap rounded-full bg-brand-orange/15 px-2 py-0.5 text-xs font-bold uppercase tracking-wide text-brand-orange">
+                      Bônus
+                    </span>
+                  ) : (
+                    <span className="shrink-0 whitespace-nowrap text-right text-sm leading-relaxed text-offwhite/40 line-through tabular-nums sm:text-base">
+                      R$ {valor}
+                    </span>
+                  )}
                 </li>
               ))}
             </ul>
 
             <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.03] p-6 text-center">
-              <p className="text-sm font-medium uppercase tracking-wide text-offwhite/70">
-                Pagamento único
+              <p className="text-sm text-offwhite/60">
+                Tudo isso deveria custar{' '}
+                <span className="font-semibold line-through">R$ {valorTotal}</span>
               </p>
-              <p className="mt-1 text-5xl font-extrabold leading-none text-brand-orange sm:text-6xl">
-                R$ 47
+              <p className="mt-3 text-sm font-medium text-offwhite/80">
+                Mas você pode ter tudo isso agora mesmo por:
+              </p>
+              <p className="mt-3 text-brand-orange">
+                <span className="sr-only">R$ 47,00</span>
+                <span aria-hidden="true" className="flex items-end justify-center gap-1.5">
+                  <span className="pb-2 text-base font-semibold leading-none sm:text-lg">
+                    R$
+                  </span>
+                  <span className="text-8xl font-extrabold leading-[0.82] tracking-tight sm:text-9xl">
+                    47
+                  </span>
+                  <span className="self-start pt-1 text-base font-semibold leading-none sm:text-lg">
+                    ,00
+                  </span>
+                </span>
               </p>
               <p className="mt-2 text-sm text-offwhite/70">
-                Sem mensalidade e com garantia incondicional de 7 dias.
+                Pagamento único, sem mensalidade e com garantia incondicional de
+                7 dias.
               </p>
             </div>
+            <p className="mt-3 text-center text-xs text-offwhite/40">
+              Valores de referência dos recursos incluídos, não preços de venda
+              avulsa.
+            </p>
 
             <div className="mt-8">
               <CtaButton checkoutUrl={checkoutRadar}>
-                Quero o Radar do Vendedor Rico
+                Quero o controle da minha comissão!
               </CtaButton>
             </div>
           </div>
