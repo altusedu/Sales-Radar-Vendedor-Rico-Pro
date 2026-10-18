@@ -1,13 +1,12 @@
 import { faqs } from '@/lib/faqs'
 
 // Ficha técnica (JSON-LD) da página: diz ao Google e às IAs, sem ambiguidade, o que é o produto,
-// quanto custa e quem vende. O produto usa o mesmo @id da página /radar-vendedor-rico-pro (é o
-// mesmo RVR PRO), e a organização e o Rafael usam os mesmos @id da home e da VMN.
+// quanto custa e quem vende. O produto tem @id próprio (não é o mesmo do PRO, que mora em
+// /radar-vendedor-rico-pro), e a organização usa o mesmo @id da home e da VMN.
 const site = 'https://www.altusedu.com.br'
 const pagina = `${site}/radar-vendedor-rico`
-const produto = `${site}/radar-vendedor-rico-pro`
 
-export const checkoutRadarPro = 'https://sun.eduzz.com/Z0B1R3579A'
+export const checkoutRadar = 'https://sun.eduzz.com/7WXG86GD0A'
 
 export function dadosEstruturados() {
   return {
@@ -21,24 +20,24 @@ export function dadosEstruturados() {
       },
       {
         '@type': 'SoftwareApplication',
-        '@id': `${produto}#software`,
-        name: 'Radar do Vendedor Rico PRO',
-        alternateName: 'RVR PRO',
+        '@id': `${pagina}#software`,
+        name: 'Radar do Vendedor Rico',
+        alternateName: 'RVR',
         sameAs: ['https://www.instagram.com/vendedor.rico/'],
         description:
-          'Sistema de gestão de metas e vendas para vendedores comissionados. Calcula a meta diária pelos dias úteis que restam, registra as vendas do dia, acompanha comissões pendentes, simula descontos antes de negociar e guarda o histórico de cada mês com backup na nuvem.',
+          'Calculadora de metas para vendedores comissionados. A partir do salário desejado, da comissão média, do ticket médio e dos dias de trabalho, mostra a meta de comissão e de faturamento do mês e quantas vendas e atendimentos fazer por dia.',
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Web (celular, tablet e computador)',
         inLanguage: 'pt-BR',
-        url: produto,
+        url: pagina,
         publisher: { '@id': `${site}/#organizacao` },
         offers: {
           '@type': 'Offer',
-          price: '187.00',
+          price: '47.00',
           priceCurrency: 'BRL',
-          description: 'Licença anual: R$ 187 à vista ou 12x de R$ 19,34. Garantia incondicional de 7 dias.',
+          description: 'Pagamento único de R$ 47, sem mensalidade. Garantia incondicional de 7 dias.',
           availability: 'https://schema.org/InStock',
-          url: checkoutRadarPro,
+          url: checkoutRadar,
           seller: { '@id': `${site}/#organizacao` },
         },
       },
@@ -46,7 +45,7 @@ export function dadosEstruturados() {
         '@type': 'FAQPage',
         '@id': `${pagina}#perguntas`,
         url: pagina,
-        about: { '@id': `${produto}#software` },
+        about: { '@id': `${pagina}#software` },
         mainEntity: faqs.map(({ question, answer }) => ({
           '@type': 'Question',
           name: question,

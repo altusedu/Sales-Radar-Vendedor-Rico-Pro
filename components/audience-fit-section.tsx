@@ -11,7 +11,7 @@ export function AudienceFitSection() {
         <div className="mt-10 grid gap-4 text-left sm:grid-cols-2">
           <div className="rounded-2xl border border-brand-orange/30 bg-brand-orange/5 p-6">
             <h3 className="mb-4 text-sm font-bold uppercase tracking-wide text-brand-orange">
-              O Radar PRO é pra você que:
+              O Radar é pra você que:
             </h3>
             <ul className="space-y-3 text-sm leading-relaxed text-offwhite/90">
               <li className="flex items-start gap-2">

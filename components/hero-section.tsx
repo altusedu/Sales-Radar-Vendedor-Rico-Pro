@@ -31,9 +31,9 @@ export function HeroSection() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-pretty text-base leading-relaxed text-offwhite/80 sm:text-lg">
-          O Radar do Vendedor Rico PRO é o sistema definitivo que calcula seus
-          atendimentos diários, protege sua margem contra descontos abusivos e
-          coloca previsibilidade de 5 dígitos no seu bolso todos os meses.
+          O Radar do Vendedor Rico é a calculadora que mostra, em segundos,
+          quantos atendimentos e quanto em vendas você precisa fazer hoje e no
+          mês para alcançar o salário que quer.
         </p>
 
         <div className="relative mx-auto mt-10 max-w-3xl">
@@ -43,7 +43,7 @@ export function HeroSection() {
           />
           <Image
             src={`${basePath}/hero/hero-mockup.webp`}
-            alt="Radar do Vendedor Rico PRO exibido em notebook e celular"
+            alt="Radar do Vendedor Rico exibido em notebook e celular"
             width={1536}
             height={1024}
             priority
@@ -53,15 +53,15 @@ export function HeroSection() {
 
         <div className="mx-auto mt-10 max-w-xl">
           <CtaButton>
-            Quero minha previsibilidade financeira (R$ 19,34/mês)
+            Quero calcular minha meta diária (R$ 47)
           </CtaButton>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-offwhite/70 sm:text-sm">
             <span className="inline-flex items-center gap-1.5">
               <Lock className="size-4 text-brand-orange" /> Acesso Imediato
             </span>
             <span className="inline-flex items-center gap-1.5">
-              <CloudUpload className="size-4 text-brand-orange" /> Backup Seguro
-              na Nuvem
+              <CloudUpload className="size-4 text-brand-orange" /> Pagamento
+              Único
             </span>
             <span className="inline-flex items-center gap-1.5">
               <ShieldCheck className="size-4 text-brand-orange" /> Garantia de 7

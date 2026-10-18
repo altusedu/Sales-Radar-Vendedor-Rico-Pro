@@ -4,28 +4,33 @@
 // do 'use client'.
 export const faqs = [
   {
-    question: 'Consigo acessar o Radar PRO pelo celular?',
+    question: 'O que é o Radar do Vendedor Rico?',
     answer:
-      'Sim! O sistema é 100% mobile-first e funciona perfeitamente no celular, tablet ou computador. Você lança suas vendas direto do balcão, de qualquer lugar, sem instalar nada.',
+      'É uma calculadora de metas para vendedor comissionado. Você informa quanto quer ganhar, sua comissão média, seu ticket médio e os dias que vai trabalhar, e ele mostra quanto precisa vender e quantos clientes precisa atender por dia e no mês.',
   },
   {
-    question: 'Meus dados ficam seguros?',
+    question: 'Funciona no celular?',
     answer:
-      'Com certeza. Todos os seus lançamentos são criptografados e armazenados com backup seguro na nuvem, protegidos contra qualquer perda de informação.',
+      'Sim. Você acessa pelo navegador do celular, do tablet ou do computador, sem instalar nada, e vê o resultado assim que digita os números.',
   },
   {
-    question: 'Se eu trocar de celular, perco meu histórico?',
+    question: 'Tem mensalidade?',
     answer:
-      'Não. Como tudo é sincronizado na nuvem, basta entrar com a sua conta em qualquer dispositivo que todo o seu histórico de metas e comissões estará lá, intacto.',
+      'Não. É um pagamento único de R$ 47, sem mensalidade e sem renovação automática.',
   },
   {
-    question: 'Como funciona a renovação da assinatura?',
+    question: 'Preciso lançar minhas vendas todo dia?',
     answer:
-      'A licença é anual. Você paga R$ 187,00 à vista (ou 12x de R$ 19,34) e tem acesso completo por 12 meses. Avisamos com antecedência antes de qualquer renovação, sem surpresas.',
+      'Não. Você coloca a sua meta e os seus números, e o Radar mostra o caminho. Mudou alguma coisa no mês, como a comissão ou os dias de trabalho, é só atualizar o número que o resultado se ajusta na hora.',
+  },
+  {
+    question: 'E se eu não gostar?',
+    answer:
+      'Você tem garantia incondicional de 7 dias. Se não fizer sentido para você, devolvemos 100% do valor, sem letras miúdas.',
   },
   {
     question: 'Terei suporte se tiver dúvidas?',
     answer:
-      'Sim. Nossa equipe do Grupo Altus Educacional oferece suporte para te ajudar a extrair o máximo do sistema e bater suas metas todos os dias.',
+      'Sim. A equipe do Grupo Altus Educacional oferece suporte para você tirar o máximo da calculadora e bater suas metas.',
   },
 ]

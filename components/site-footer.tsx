@@ -7,19 +7,19 @@ export function SiteFooter() {
       <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-6 gap-y-6 px-4 pt-8 md:flex-nowrap">
         <div className="flex w-full items-center gap-4 md:w-auto">
           <Image
-            src={`${basePath}/logo-radar-vendedor-rico-pro-assinatura.webp`}
+            src={`${basePath}/logo-radar-vendedor-rico-assinatura.webp`}
             alt=""
             width={360}
-            height={118}
+            height={126}
             className="h-auto w-[140px] flex-none sm:w-[180px]"
           />
           <p className="grid gap-1 md:max-w-[340px]">
             <strong className="text-[13px] font-semibold text-offwhite">
-              Radar do Vendedor Rico PRO
+              Radar do Vendedor Rico
             </strong>
             <span className="text-xs leading-snug text-offwhite/55">
-              O sistema de gestão que coloca previsibilidade financeira no bolso
-              de quem vive de vendas.
+              A calculadora que transforma a sua meta do mês no número de
+              hoje.
             </span>
           </p>
         </div>

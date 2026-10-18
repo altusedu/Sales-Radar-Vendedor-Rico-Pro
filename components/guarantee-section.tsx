@@ -13,7 +13,7 @@ export function GuaranteeSection() {
               Garantia Incondicional de 7 Dias
             </h2>
             <p className="mt-2 text-pretty text-base leading-relaxed text-graphite/80">
-              Teste o Radar PRO por 7 dias. Se você não sentir clareza absoluta
+              Teste o Radar do Vendedor Rico por 7 dias. Se você não sentir clareza absoluta
               sobre suas metas e o seu salário em 1 semana, devolveremos 100% do
               seu dinheiro.{' '}
               <span className="font-semibold text-graphite">

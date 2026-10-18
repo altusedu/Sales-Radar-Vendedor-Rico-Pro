@@ -23,7 +23,7 @@ export function AuthoritySection() {
               Rafael Pires
             </h3>
             <p className="text-sm font-semibold text-brand-orange">
-              Gerente Nacional de Vendas, 15 anos de experiência comercial
+              Especialista em Vendas, 15 anos de experiência comercial
             </p>
 
             <p className="mt-4 text-pretty text-base leading-relaxed text-graphite/80">
@@ -39,7 +39,7 @@ export function AuthoritySection() {
             <p className="mt-3 text-pretty text-base leading-relaxed text-graphite/80">
               Percebi que o problema nunca foi falta de esforço. Era falta de
               um sistema simples que mostrasse, todo santo dia, exatamente o
-              que fazer para bater a meta. O Radar do Vendedor Rico PRO nasceu
+              que fazer para bater a meta. O Radar do Vendedor Rico nasceu
               dessa constatação: testado na prática, com gente de verdade,
               não numa planilha teórica.
             </p>

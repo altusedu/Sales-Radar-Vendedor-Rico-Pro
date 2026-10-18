@@ -15,7 +15,7 @@ export function MechanismSection() {
         <h2 className="mx-auto mt-6 max-w-2xl text-pretty text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl md:text-4xl">
           Seu salário não depende de sorte.{' '}
           <span className="text-brand-orange">Depende de 2 números</span>, e
-          o Radar PRO já sabe quais são.
+          o Radar já sabe quais são.
         </h2>
 
         <div className="mx-auto mt-10 flex flex-col gap-4 text-left sm:mt-12">
@@ -39,7 +39,7 @@ export function MechanismSection() {
 
         <div className="mx-auto mt-10 max-w-xl rounded-2xl bg-brand-orange/10 p-6 sm:mt-12 sm:p-8">
           <p className="text-pretty text-base font-semibold leading-relaxed text-offwhite sm:text-lg">
-            Esquece a conta. O Radar PRO já calculou tudo por você, todo santo
+            Esquece a conta. O Radar já calculou tudo por você, todo santo
             dia.
           </p>
           <p className="mt-3 text-pretty text-xl font-extrabold uppercase leading-tight tracking-tight text-brand-orange sm:text-2xl">
