@@ -74,7 +74,46 @@
   }
 }
 
+/* Mesma varredura da logo do PRO, medida na assinatura recortada: o círculo fica no centro do
+   anel e vai até a borda interna dele. No fundo escuro, screen acende em vez de escurecer. */
+.radar-varredura {
+  position: absolute;
+  left: 1.41%;
+  top: 11.27%;
+  width: 27.13%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, transparent 0 70%, rgba(255, 110, 30, 0.18) 77%, rgba(255, 110, 30, 0.85) 96%, transparent 100%);
+  mix-blend-mode: screen;
+  animation: radar-varredura 2.4s linear infinite;
+  pointer-events: none;
+}
+
+.radar-varredura::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 46%;
+  border-radius: 2px;
+  background: #ff5500;
+  transform-origin: 50% 100%;
+  transform: translate(-50%, -100%);
+  box-shadow: 0 0 7px rgba(255, 85, 0, 0.8);
+}
+
+@keyframes radar-varredura {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .radar-varredura {
+    animation: none;
+  }
+
   .cta-degrade::before {
     animation: none;
     opacity: 0.8;
