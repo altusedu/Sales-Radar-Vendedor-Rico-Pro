@@ -9,13 +9,13 @@ export function AuthoritySection() {
           Quem criou isso
         </span>
 
-        <div className="mt-8 flex flex-col items-center gap-6 sm:flex-row sm:items-start sm:gap-8">
+        <div className="mt-8 flex flex-col items-center gap-6 sm:flex-row sm:items-stretch sm:gap-8">
           <Image
             src={`${basePath}/rafael-pires.jpg`}
             alt="Rafael Pires"
-            width={140}
-            height={140}
-            className="size-32 shrink-0 rounded-2xl object-cover ring-1 ring-graphite/10 sm:size-36"
+            width={1143}
+            height={1376}
+            className="h-auto w-40 shrink-0 rounded-2xl object-cover object-top ring-1 ring-graphite/10 sm:w-48"
           />
 
           <div className="text-center sm:text-left">

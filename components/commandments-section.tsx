@@ -62,7 +62,7 @@ export function CommandmentsSection() {
             Como funciona
           </span>
           <h2 className="mx-auto mt-5 max-w-2xl text-balance text-2xl font-extrabold leading-tight tracking-tight text-graphite sm:text-3xl md:text-4xl">
-            Sua meta do mês vira o número de hoje
+            Sua meta do mês é acompanhada diariamente
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-base leading-relaxed text-graphite/70">
             Você informa quanto quer ganhar, sua comissão média, seu ticket

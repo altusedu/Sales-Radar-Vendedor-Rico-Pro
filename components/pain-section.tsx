@@ -35,11 +35,12 @@ export function PainSection() {
 
         <div className="mt-12 rounded-2xl bg-graphite p-8 text-center sm:p-10">
           <p className="mx-auto max-w-3xl text-pretty text-lg font-medium leading-relaxed text-offwhite sm:text-xl">
-            Vendas é uma das poucas profissões que permitem ao ser humano
-            escolher{' '}
-            <span className="text-brand-orange">exatamente quanto vai ganhar.</span>{' '}
+            Vendas é uma das poucas profissões no mundo que permite ao
+            profissional escolher{' '}
+            <span className="text-brand-orange">o quanto quer ganhar.</span>{' '}
             Eu sei que você se esforça muito, o problema não é a sua capacidade,
-            é a falta de um sistema que te ajude todos os dias.
+            é a falta de um sistema que te ajude todos os dias a alcançar o que
+            você quer.
           </p>
         </div>
       </div>
