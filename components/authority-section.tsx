@@ -23,7 +23,7 @@ export function AuthoritySection() {
               Rafael Pires
             </h3>
             <p className="text-sm font-semibold text-brand-orange">
-              Gerente Nacional de Vendas — 15 anos de experiência comercial
+              Gerente Nacional de Vendas, 15 anos de experiência comercial
             </p>
 
             <p className="mt-4 text-pretty text-base leading-relaxed text-graphite/80">
@@ -32,7 +32,7 @@ export function AuthoritySection() {
               <strong className="text-graphite">100 vendedores</strong>, em{' '}
               <strong className="text-graphite">30+ lojas</strong>, espalhados
               por <strong className="text-graphite">18 estados</strong> do
-              Brasil — e vi essa mesma angústia se repetir, um vendedor atrás
+              Brasil, e vi essa mesma angústia se repetir, um vendedor atrás
               do outro.
             </p>
 
@@ -40,7 +40,7 @@ export function AuthoritySection() {
               Percebi que o problema nunca foi falta de esforço. Era falta de
               um sistema simples que mostrasse, todo santo dia, exatamente o
               que fazer para bater a meta. O Radar do Vendedor Rico PRO nasceu
-              dessa constatação — testado na prática, com gente de verdade,
+              dessa constatação: testado na prática, com gente de verdade,
               não numa planilha teórica.
             </p>
           </div>

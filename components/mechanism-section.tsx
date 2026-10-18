@@ -14,7 +14,7 @@ export function MechanismSection() {
 
         <h2 className="mx-auto mt-6 max-w-2xl text-pretty text-2xl font-extrabold leading-tight tracking-tight sm:text-3xl md:text-4xl">
           Seu salário não depende de sorte.{' '}
-          <span className="text-brand-orange">Depende de 2 números</span> — e
+          <span className="text-brand-orange">Depende de 2 números</span>, e
           o Radar PRO já sabe quais são.
         </h2>
 
@@ -23,7 +23,7 @@ export function MechanismSection() {
             <Ban className="mt-0.5 size-6 shrink-0 text-offwhite/50" />
             <p className="text-pretty text-base leading-relaxed text-offwhite/80 sm:text-lg">
               Todo vendedor acha que, pra ganhar mais, precisa atender mais
-              gente. Só que o dia só tem 24 horas — e ninguém aguenta esse
+              gente. Só que o dia só tem 24 horas, e ninguém aguenta esse
               ritmo pra sempre.
             </p>
           </div>

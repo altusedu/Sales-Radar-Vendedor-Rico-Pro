@@ -3,7 +3,7 @@
 // cima ou recarregar. "Passou por X%" = a borda de baixo da tela chegou a X% da página.
 //
 // Sem custo pra rolagem: listener passivo, conta refeita no máximo a cada 250ms e
-// removido quando os 4 marcos saírem. O fbq só enfileira — nunca espera a Meta.
+// removido quando os 4 marcos saírem. O fbq só enfileira, nunca espera a Meta.
 // Retorna a função que para o rastreio (cleanup do useEffect).
 
 const MARCOS = [25, 50, 75, 100]
