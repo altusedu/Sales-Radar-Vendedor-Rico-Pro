@@ -1,5 +1,8 @@
 'use client'
 
+import Image from 'next/image'
+import { basePath } from '@/lib/base-path'
+
 const paginaPro = 'https://www.altusedu.com.br/radar-vendedor-rico-pro'
 
 export function ProCtaSection() {
@@ -7,6 +10,13 @@ export function ProCtaSection() {
     <section className="bg-offwhite">
       <div className="mx-auto max-w-3xl px-4 pb-24 sm:pb-28">
         <div className="rounded-2xl border-2 border-brand-orange bg-gradient-to-br from-brand-orange/15 to-blue-500/15 p-7 text-center sm:p-8">
+          <Image
+            src={`${basePath}/logo-radar-vendedor-rico-pro-claro.webp`}
+            alt="Radar do Vendedor Rico PRO"
+            width={480}
+            height={157}
+            className="mx-auto mb-5 h-auto w-[150px] sm:w-[180px]"
+          />
           <h2 className="text-xl font-extrabold tracking-tight text-brand-orange sm:text-2xl">
             Quer automatizar todos esses cálculos?
           </h2>

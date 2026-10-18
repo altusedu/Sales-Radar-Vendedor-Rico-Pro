@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import { Quote } from 'lucide-react'
+import { basePath } from '@/lib/base-path'
 
 const painQuotes = [
   'Queria tanto trocar de carro, mas meu salário muda todo mês e tenho medo de não conseguir pagar a parcela...',
@@ -10,7 +12,19 @@ const painQuotes = [
 export function PainSection() {
   return (
     <section className="bg-offwhite">
-      <div className="mx-auto max-w-5xl px-4 py-16 sm:py-20">
+      {/* Mesmo encaixe da página do PRO: foto na largura toda, apagando para baixo, e o título
+          subindo por cima da parte já apagada. */}
+      <figure className="m-0 h-[240px] overflow-hidden min-[761px]:h-[clamp(280px,36vw,480px)]">
+        <Image
+          src={`${basePath}/vendedor-preocupado-fim-do-mes.webp`}
+          alt="Vendedor à noite no escritório, com a mão na testa diante do notebook e de um painel que mostra só 32% da meta do mês"
+          width={1214}
+          height={1295}
+          sizes="100vw"
+          className="size-full object-cover object-[center_14%] [mask-image:linear-gradient(180deg,#000_55%,transparent)]"
+        />
+      </figure>
+      <div className="relative mx-auto -mt-10 max-w-5xl px-4 pb-16 sm:pb-20 min-[761px]:-mt-[72px]">
         <h2 className="mx-auto max-w-2xl text-balance text-center text-2xl font-extrabold leading-tight tracking-tight text-graphite sm:text-3xl md:text-4xl">
           Você já se pegou fazendo alguma destas perguntas no fim do mês?
         </h2>
