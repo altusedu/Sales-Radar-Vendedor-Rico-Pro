@@ -33,9 +33,9 @@ export function dadosEstruturados() {
         publisher: { '@id': `${site}/#organizacao` },
         offers: {
           '@type': 'Offer',
-          price: '47.00',
+          price: '27.00',
           priceCurrency: 'BRL',
-          description: 'Pagamento único de R$ 47, sem mensalidade. Garantia incondicional de 7 dias.',
+          description: 'Pagamento único de R$ 27, sem mensalidade. Garantia incondicional de 7 dias.',
           availability: 'https://schema.org/InStock',
           url: checkoutRadar,
           seller: { '@id': `${site}/#organizacao` },

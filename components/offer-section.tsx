@@ -71,13 +71,13 @@ export function OfferSection() {
                 Mas você pode ter tudo isso agora mesmo por:
               </p>
               <p className="mt-3 text-brand-orange">
-                <span className="sr-only">R$ 47,00</span>
+                <span className="sr-only">R$ 27,00</span>
                 <span aria-hidden="true" className="flex items-end justify-center gap-1.5">
                   <span className="pb-2 text-base font-semibold leading-none sm:text-lg">
                     R$
                   </span>
                   <span className="text-8xl font-extrabold leading-[0.82] tracking-tight sm:text-9xl">
-                    47
+                    27
                   </span>
                   <span className="self-start pt-1 text-base font-semibold leading-none sm:text-lg">
                     ,00

@@ -7,7 +7,7 @@ export function AnnouncementBar() {
         </span>
         <p className="text-xs font-medium text-offwhite/90 sm:text-sm">
           Pagamento único de{' '}
-          <span className="font-bold text-brand-orange">R$ 47 | sem mensalidade.</span>
+          <span className="font-bold text-brand-orange">R$ 27 | sem mensalidade.</span>
         </p>
       </div>
     </div>

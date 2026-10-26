@@ -23,7 +23,7 @@ export function CtaButton({ children, className, checkoutUrl }: CtaButtonProps) 
         if (checkoutUrl) {
           window.fbq?.('trackCustom', 'CliqueCheckout', {
             content_name: 'Radar do Vendedor Rico',
-            value: 47,
+            value: 27,
             currency: 'BRL',
           })
         } else {

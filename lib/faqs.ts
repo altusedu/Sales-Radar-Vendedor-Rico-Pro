@@ -16,7 +16,7 @@ export const faqs = [
   {
     question: 'Tem mensalidade?',
     answer:
-      'Não. É um pagamento único de R$ 47, sem mensalidade e sem renovação automática.',
+      'Não. É um pagamento único de R$ 27, sem mensalidade e sem renovação automática.',
   },
   {
     question: 'Preciso lançar minhas vendas todo dia?',
