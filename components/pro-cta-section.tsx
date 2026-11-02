@@ -24,7 +24,7 @@ export function ProCtaSection() {
             Com o <strong className="text-graphite">Radar do Vendedor Rico PRO</strong>,
             você lança suas vendas e o mês se atualiza sozinho. Ele acompanha
             suas comissões pendentes, simula descontos antes de negociar e
-            guarda o histórico de cada mês, por 12x de R$ 19,34 ou R$ 187 por
+            guarda o histórico de cada mês, por 12x de R$ 10,03 ou R$ 97 por
             ano.
           </p>
           <a
