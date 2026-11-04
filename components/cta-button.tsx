@@ -21,11 +21,15 @@ export function CtaButton({ children, className, checkoutUrl }: CtaButtonProps) 
       href={checkoutUrl ?? '#oferta'}
       onClick={() => {
         if (checkoutUrl) {
-          window.fbq?.('trackCustom', 'CliqueCheckout', {
+          const dadosClique = {
             content_name: 'Radar do Vendedor Rico',
+            content_type: 'product',
             value: 27,
             currency: 'BRL',
-          })
+          }
+          window.fbq?.('trackCustom', 'CliqueCheckout', dadosClique)
+          // AddToCart é o mesmo clique em evento padrão: o Gerenciador só separa por conjunto/anúncio os padrão.
+          window.fbq?.('track', 'AddToCart', dadosClique)
         } else {
           window.fbq?.('track', 'Lead')
         }
